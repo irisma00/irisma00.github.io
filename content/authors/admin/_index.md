@@ -3,8 +3,8 @@
 title: Iris Ma 吳恩達
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: Iris
+last_name: Ma
 
 # Status emoji
 status:
