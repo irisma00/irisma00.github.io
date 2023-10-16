@@ -72,30 +72,17 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - certificate_url: 
-          date_end: ''
-          company_logo: org-gc
+          date_end: '2021-04-09'
           date_start: '2020-11-16'
-          description: ''
-          organization: Iowa State University
-          organization_url: https://www.iastate.edu
-          title: International Incentive Scholarship $1500
-          url: https://www.iastate.edu
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, \n hypotheses, and use cases.
-          organization: edX
+          description: |2-
+            * Robert and Cecile Mitchell Scholarship $2650 (2021)
+            * International Incentive Scholarship $1500 (2021)
+            * Global Scholars Award for Undergraduate Retention $500 (2021)
+            * International Incentive Scholarship $1500 (2020)
+          organization: ISU
           organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+          title: Award & Scholarships
+          url: https://www.edx.org
     design:
       columns: '2'
   - block: collection
