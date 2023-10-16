@@ -72,13 +72,14 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - certificate_url: 
-          date_end: '2021-04-09'
-          date_start: '2020-11-16'
+          date_end: '2022-05-09'
+          date_start: '2017-08-16'
           description: |2-
             * Robert and Cecile Mitchell Scholarship $2650 (2021)
             * International Incentive Scholarship $1500 (2021)
             * Global Scholars Award for Undergraduate Retention $500 (2021)
             * International Incentive Scholarship $1500 (2020)
+            * Dean's List Honors (10 times)
           organization: ISU
           organization_url: https://www.edx.org
           title: Award & Scholarships
