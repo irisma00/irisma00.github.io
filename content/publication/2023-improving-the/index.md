@@ -13,11 +13,11 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2023-05-23T00:00:00Z'
-doi: ''
+date: '2023-05-16T00:00:00Z'
+doi: 'https://doi.org/10.1109/SEENG59157.2023.00005'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2023-10-13T00:00:00Z'
+publishDate: '2023-05-16T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -43,7 +43,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2304.13887'
+url_pdf: 'https://ieeexplore.ieee.org/document/10190446'
 url_code: ''
 url_dataset: ''
 url_poster: ''
