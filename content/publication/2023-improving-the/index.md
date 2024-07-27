@@ -6,7 +6,7 @@ title: 'Improving the Quality of Commit Messages in Students’ Projects'
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Cristina V. Lopes
+  - Cristina Videira Lopes
 
 # Author notes (optional)
 # author_notes:
@@ -25,8 +25,8 @@ publishDate: '2023-05-16T00:00:00Z'
 publication_types: ['workshop']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2023 IEEE/ACM 5th International Workshop on Software Engineering Education for the Next Generation*
-publication_short: In *ICSE SEENG 23*
+publication: In IEEE/ACM 5th International Workshop on Software Engineering Education for the Next Generation (ICSE SEENG), Melbourne, Australia.
+publication_short: In ICSE SEENG 2023 
 
 abstract: Commit messages play a crucial role in collaborative software development. They provide a clear and concise description of the changes made to the source code. However, many commit messages among students’ projects lack useful information. This is a concern, as low-quality commit messages can negatively impact communication of software development and future maintenance. To address this issue, this research aims to help students write high-quality commit messages by “nudging” them in the right direction. We modified the GitHub Desktop application by incorporating specific requirements for commit messages, specifically “what” and “why” parts. To test whether this affects the quality of commit messages, we divided students from an Information Retrieval class into two groups, with one group using the modified application and the other using other interfaces. The results show that the quality of commit messages is improved in terms of informativeness, clearness, and length.
 

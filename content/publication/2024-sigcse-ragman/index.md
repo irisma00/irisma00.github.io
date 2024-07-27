@@ -7,7 +7,7 @@ title: 'Integrating AI Tutors in a Programming Course'
 authors:
   - admin
   - Alberto Krone Martins
-  - Cristina V. Lopes
+  - Cristina Videira Lopes
 
 # Author notes (optional)
 # author_notes:
@@ -26,15 +26,15 @@ publishDate: '2024-07-14'
 publication_types: ['paper']
 
 # Publication name and optional abbreviated publication name.
-publication: In *1st ACM Virtual Global Computing Education Conference (SIGCSE Virtual 2024)*
-publication_short: In *SIGCSE Virtual 24*
+publication: In 1st ACM Virtual Global Computing Education Conference (SIGCSE Virtual 2024)
+publication_short: In SIGCSE Virtual 2024
 
 abstract: RAGMan is an LLM-powered tutoring system that can support a variety of course-specific and homework-specific AI tutors. RAGMan leverages Retrieval Augmented Generation (RAG), as well as strict instructions, to ensure the alignment of the AI tutors' responses. By using RAGMan's AI tutors, students receive assistance with their specific homework assignments without directly obtaining solutions, while also having the ability to ask general programming-related questions. <br> RAGMan was deployed as an optional resource in an introductory programming course with an enrollment of 455 students. It was configured as a set of five homework-specific AI tutors. This paper describes the interactions the students had with the AI tutors, the students' feedback, and a comparative grade analysis. Overall, about half of the students engaged with the AI tutors, and the vast majority of the interactions were legitimate homework questions. When students posed questions within the intended scope, the AI tutors delivered accurate responses 98% of the time. Within the students used AI tutors, 78% reported that the tutors helped their learning. Beyond AI tutors' ability to provide valuable suggestions, students reported appreciating them for fostering a safe learning environment free from judgment. 
 
 # Summary. An optional shortened abstract.
 summary: RAGMan is an LLM-powered tutoring system that can support a variety of course-specific and homework-specific AI tutors.
 
-tags: []
+tags: [LLMs]
 
 # Display this page in the Featured widget?
 featured: true
