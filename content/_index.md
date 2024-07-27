@@ -24,8 +24,8 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Research & Teaching Assistant
-          company: University of California, Irvine
+        - title: Research Assistant
+          company: Mondego Lab, University of California, Irvine
           company_url: 'https://uci.edu/'
           company_logo: org-uci
           location: Irvine, CA
@@ -78,6 +78,18 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - certificate_url: 
+          date_end: ''
+          date_start: '2022-09-16'
+          description: |2-
+            * Beall Applied Innovation Proof-of-Product Grant $48,000 (2024)
+            * ESEC/FSE Conference Travel Fund} $2450 (2023)
+            * New Ph.D. Student Fellowship} $2500 (2022)
+          organization: UCI
+          organization_url: https://uci.edu/
+          title: University of California, Irvine
+          url: https://uci.edu/
+
+        - certificate_url: 
           date_end: '2022-05-09'
           date_start: '2017-08-16'
           description: |2-
@@ -87,9 +99,9 @@ sections:
             * International Incentive Scholarship $1500 (2020)
             * Dean's List Honors (10 times)
           organization: ISU
-          organization_url: https://www.edx.org
+          organization_url: https://www.iastate.edu/
           title: Iowa State University
-          url: https://www.edx.org
+          url: https://www.iastate.edu/
     design:
       columns: '2'
   # - block: collection
