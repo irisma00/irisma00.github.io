@@ -1,4 +1,4 @@
-module github.com/wowchemy/starter-hugo-academic
+module https://github.com/HugoBlox/theme-academic-cv
 
 go 1.19
 
