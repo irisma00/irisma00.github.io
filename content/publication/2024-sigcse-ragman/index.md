@@ -1,11 +1,12 @@
 ---
-title: 'Improving the Quality of Commit Messages in Students’ Projects'
+title: 'Integrating AI Tutors in a Programming Course'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
+  - Alberto Krone Martins
   - Cristina V. Lopes
 
 # Author notes (optional)
@@ -13,25 +14,25 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2023-05-16T00:00:00Z'
+date: '2024-07-14'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2023-05-16T00:00:00Z'
+publishDate: '2024-07-14'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['workshop']
+publication_types: ['paper']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2023 IEEE/ACM 5th International Workshop on Software Engineering Education for the Next Generation*
-publication_short: In *ICSE SEENG 23*
+publication: In *1st ACM Virtual Global Computing Education Conference (SIGCSE Virtual 2024)*
+publication_short: In *SIGCSE Virtual 24*
 
-abstract: Commit messages play a crucial role in collaborative software development. They provide a clear and concise description of the changes made to the source code. However, many commit messages among students’ projects lack useful information. This is a concern, as low-quality commit messages can negatively impact communication of software development and future maintenance. To address this issue, this research aims to help students write high-quality commit messages by “nudging” them in the right direction. We modified the GitHub Desktop application by incorporating specific requirements for commit messages, specifically “what” and “why” parts. To test whether this affects the quality of commit messages, we divided students from an Information Retrieval class into two groups, with one group using the modified application and the other using other interfaces. The results show that the quality of commit messages is improved in terms of informativeness, clearness, and length.
+abstract: RAGMan is an LLM-powered tutoring system that can support a variety of course-specific and homework-specific AI tutors. RAGMan leverages Retrieval Augmented Generation (RAG), as well as strict instructions, to ensure the alignment of the AI tutors' responses. By using RAGMan's AI tutors, students receive assistance with their specific homework assignments without directly obtaining solutions, while also having the ability to ask general programming-related questions. <br> RAGMan was deployed as an optional resource in an introductory programming course with an enrollment of 455 students. It was configured as a set of five homework-specific AI tutors. This paper describes the interactions the students had with the AI tutors, the students' feedback, and a comparative grade analysis. Overall, about half of the students engaged with the AI tutors, and the vast majority of the interactions were legitimate homework questions. When students posed questions within the intended scope, the AI tutors delivered accurate responses 98% of the time. Within the students used AI tutors, 78% reported that the tutors helped their learning. Beyond AI tutors' ability to provide valuable suggestions, students reported appreciating them for fostering a safe learning environment free from judgment. 
 
 # Summary. An optional shortened abstract.
-summary: The research focuses on enhancing the quality of commit messages in collaborative software development by introducing specific requirements in the "what" and "why" parts through modifications to the GitHub Desktop application, demonstrating improved informativeness, clearness, and length in commit messages among students.
+summary: RAGMan is an LLM-powered tutoring system that can support a variety of course-specific and homework-specific AI tutors.
 
 tags: []
 
@@ -43,12 +44,12 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://ieeexplore.ieee.org/document/10190446'
+url_pdf: 'https://arxiv.org/abs/2407.15718'
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: 'https://docs.google.com/presentation/d/1F-aFfRDbolE9sXy6jzUvyhjG8mQ57dksWCQ-su_8eeU/edit?usp=sharing'
+url_slides: ''
 url_source: ''
 url_video: ''
 

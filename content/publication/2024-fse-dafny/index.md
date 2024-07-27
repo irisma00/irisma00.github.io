@@ -16,7 +16,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2024-02-2'
-doi: '10.1145/3643763'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2024-02-02'
@@ -45,7 +45,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://doi.org/10.48550/arXiv.2402.00247'
+url_pdf: 'https://dl.acm.org/doi/abs/10.1145/3643763'
 url_code: ''
 url_dataset: ''
 url_poster: ''

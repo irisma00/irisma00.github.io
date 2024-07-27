@@ -22,13 +22,13 @@ organizations:
     url: https://uci.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include program verification, LLM application, and LLM testing.
 
 # Interests to show in About widget
 interests:
-  - Software Engineering
-  - Large Language Models
-  - Education
+  - Program Verification
+  - LLM Application
+  - LLM Testing
 
 # Education to show in About widget
 education:
@@ -70,6 +70,7 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 
+
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
 
@@ -78,5 +79,7 @@ highlight_name: true
 ---
 
 
-I am a PhD student in Software Engineering at UC Irvine under [Crista Lopes](https://ics.uci.edu/~lopes/). I received B.S. in Agronomy and Computer Science at Iowa State University. I worked as an undergraduate research assistant at [Laboratory for Software Design](https://design.cs.iastate.edu/) with [Hridesh Rajan](https://hridesh.github.io/) and [Robert Dyer](https://cse.unl.edu/~rdyer/) on an ultra-large data mining project.
+I am a PhD student in Software Engineering at [UC Irvine](https://uci.edu/) under [Crista Lopes](https://ics.uci.edu/~lopes/). My research focuses on program verification, LLM application, and LLM testing. Ensuring software correctness through verification, exploring innovative uses for LLMs, and establishing rigorous testing methodologies are crucial for advancing reliable and ethical AI technologies. 
+
+I received B.S. in Agronomy and Computer Science at [Iowa State University](https://www.iastate.edu/). I worked as an undergraduate research assistant at [Laboratory for Software Design](https://design.cs.iastate.edu/) with [Hridesh Rajan](https://hridesh.github.io/) and [Robert Dyer](https://cse.unl.edu/~rdyer/) on an ultra-large data mining project.
 {style="text-align: justify;"}

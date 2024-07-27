@@ -27,7 +27,7 @@ sections:
         - title: Research Assistant
           company: Mondego Lab, University of California, Irvine
           company_url: 'https://uci.edu/'
-          company_logo: org-uci
+          company_logo: uci
           location: Irvine, CA
           date_start: '2022-09-01'
           date_end: ''
@@ -55,7 +55,7 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Publications
+      title: Selected Publications
       filters:
         folders:
           - publication
@@ -64,7 +64,7 @@ sections:
       columns: '2'
       view: card
   - block: accomplishments
-    id: honors&awards
+    id: honors
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
       title: 'Honors & Awards'
