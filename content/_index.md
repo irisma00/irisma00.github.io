@@ -81,9 +81,11 @@ sections:
           date_end: ''
           date_start: '2022-09-16'
           description: |2-
-            * Beall Applied Innovation Proof-of-Product Grant $48,000 (2024)
-            * ESEC/FSE Conference Travel Fund} $2450 (2023)
-            * New Ph.D. Student Fellowship} $2500 (2022)
+            * Beall Applied Innovation's Graduate Innovation Fellowship $5,000 (2024)
+            * I-Corps Program $5,000 (2024)
+            * Beall Applied Innovation's Proof-of-Product Grant $48,000 (2024)
+            * ESEC/FSE Conference Travel Fund $2450 (2023)
+            * New Ph.D. Student Fellowship $2500 (2022)
           organization: UCI
           organization_url: https://uci.edu/
           title: University of California, Irvine
