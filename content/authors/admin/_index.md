@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Research & Teaching Assistant
+role: Software Engineering Ph.D. Candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -22,13 +22,14 @@ organizations:
     url: https://uci.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include program verification, LLM application, and LLM testing.
+bio: My research focuses on AI for reliable software engineering, including LLM memorization, hallucination detection, retrieval-augmented generation, and verified program synthesis.
 
 # Interests to show in About widget
 interests:
-  - Program Verification
-  - LLM Application
-  - LLM Testing
+  - LLM Memorization & Hallucination Detection
+  - Retrieval-Augmented Generation (RAG)
+  - Verified Program Synthesis
+  - Information Retrieval & Search Ranking
 
 # Education to show in About widget
 education:
@@ -36,6 +37,9 @@ education:
     - course: Ph.D. in Software Engineering
       institution: University of California, Irvine
       year: current
+    - course: M.S. in Software Engineering
+      institution: University of California, Irvine
+      year: 2026
     - course: B.S. in Agronomy, Computer Science
       institution: Iowa State University
       year: 2022
@@ -79,7 +83,7 @@ highlight_name: true
 ---
 
 
-I am a PhD student in Software Engineering at [UC Irvine](https://uci.edu/) under [Crista Lopes](https://ics.uci.edu/~lopes/). My research focuses on program verification, LLM application, and LLM testing. Ensuring software correctness through verification, exploring innovative uses for LLMs, and establishing rigorous testing methodologies are crucial for advancing reliable and ethical AI technologies. 
+I am a PhD candidate in Software Engineering at [UC Irvine](https://uci.edu/), working with [Cristina Videira Lopes](https://ics.uci.edu/~lopes/) on AI for reliable software engineering. My work spans LLM training-data memorization and hallucination detection, retrieval-augmented generation (RAG), verified program synthesis with Dafny, and query-adaptive fusion methods for production search ranking.
 
-I received B.S. in Agronomy and Computer Science at [Iowa State University](https://www.iastate.edu/). I worked as an undergraduate research assistant at [Laboratory for Software Design](https://design.cs.iastate.edu/) with [Hridesh Rajan](https://hridesh.github.io/) and [Robert Dyer](https://cse.unl.edu/~rdyer/) on an ultra-large data mining project.
+I received a B.S. in Agronomy and Computer Science at [Iowa State University](https://www.iastate.edu/). I worked as an undergraduate research assistant at [Laboratory for Software Design](https://design.cs.iastate.edu/) with [Hridesh Rajan](https://hridesh.github.io/) and [Robert Dyer](https://cse.unl.edu/~rdyer/) on an ultra-large data mining project.
 {style="text-align: justify;"}

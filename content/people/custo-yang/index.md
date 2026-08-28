@@ -1,11 +1,12 @@
 ---
 title: Custo Yang
-summary: Undergraduate Student (Winter 2024 -- present)
+summary: Undergraduate Student, UCI (Winter 2024 -- Spring 2025)
 tags:
   - RAGMan
   - SDE
   - Winter 2024
 
+date: '2025-06-01'
 show_date: false
 
 
@@ -33,9 +34,3 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
-
-
-

@@ -31,6 +31,20 @@ sections:
           location: Irvine, CA
           date_start: '2022-09-01'
           date_end: ''
+        - title: Applied Scientist Intern
+          company: Thomson Reuters
+          company_url: 'https://www.thomsonreuters.com/'
+          company_logo: org-thomson-reuters
+          location: Remote
+          date_start: '2026-06-01'
+          date_end: '2026-09-01'
+        - title: Applied Scientist Intern
+          company: Thomson Reuters
+          company_url: 'https://www.thomsonreuters.com/'
+          company_logo: org-thomson-reuters
+          location: Eagan, MN
+          date_start: '2025-06-01'
+          date_end: '2025-09-01'
         - title: Software Engineer Internship 
           company: Corteva Agriscience
           company_url: 'https://www.corteva.com/'
