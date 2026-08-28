@@ -1,0 +1,30 @@
+{{ $admin := site.GetPage "/authors/admin" }}
+{{ $avatar := ($admin.Resources.GetMatch "avatar*") }}
+<aside class="sidebar">
+  {{ with $avatar }}
+    {{ $img := .Fill "240x240 Center" }}
+    <img class="avatar" src="{{ $img.RelPermalink }}" alt="{{ $admin.Title }}">
+  {{ end }}
+  <h1><a href="/" style="color:inherit;">{{ $admin.Title }}</a></h1>
+  <div class="role">{{ $admin.Params.role }}</div>
+  {{ range $admin.Params.organizations }}
+    <div class="org"><a href="{{ .url }}">{{ .name }}</a></div>
+  {{ end }}
+  <div class="social">
+    {{ range $admin.Params.social }}
+      {{ if eq .icon "envelope" }}
+        <a href="{{ .link }}" title="Email"><i class="fas fa-envelope"></i></a>
+      {{ else if eq .icon "twitter" }}
+        <a href="{{ .link }}" title="Twitter / X" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+      {{ else if eq .icon "graduation-cap" }}
+        <a href="{{ .link }}" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+      {{ else if eq .icon "github" }}
+        <a href="{{ .link }}" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      {{ else if eq .icon "linkedin" }}
+        <a href="{{ .link }}" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      {{ else if eq .icon "cv" }}
+        <a href="/{{ .link }}" title="CV / Résumé"><i class="fas fa-file-lines"></i></a>
+      {{ end }}
+    {{ end }}
+  </div>
+</aside>

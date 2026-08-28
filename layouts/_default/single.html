@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="page">
+  {{ partial "sidebar.html" . }}
+  <div class="content">
+    <section class="section">
+      <h2 style="border:none; padding-bottom:0; text-transform:none; letter-spacing:normal; font-size:1.4rem;">{{ .Title }}</h2>
+      {{ .Content }}
+    </section>
+  </div>
+</div>
+{{ end }}

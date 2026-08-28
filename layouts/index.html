@@ -1,0 +1,107 @@
+{{ define "main" }}
+{{ $admin := site.GetPage "/authors/admin" }}
+
+<div class="page">
+
+  {{ partial "sidebar.html" . }}
+
+  <div class="content">
+
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      {{ $admin.Content }}
+    </section>
+
+    <section class="section" id="interests">
+      <div class="section-cols">
+        <div>
+          <h2>Research Interests</h2>
+          <ul>
+            {{ range $admin.Params.interests }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <ul>
+            {{ range $admin.Params.education.courses }}
+              <li><strong>{{ .course }}</strong><br><span class="entry-sub">{{ .institution }}{{ with .year }} · {{ . }}{{ end }}</span></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      {{ range $exp := site.Data.experience }}
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-title">{{ $exp.title }}</span>
+            <span class="entry-meta">
+              {{ (time.AsTime (printf "%s-01" $exp.date_start)).Format "Jan 2006" }} –
+              {{ if $exp.date_end }}{{ (time.AsTime (printf "%s-01" $exp.date_end)).Format "Jan 2006" }}{{ else }}Present{{ end }}
+              {{ with $exp.location }} · {{ . }}{{ end }}
+            </span>
+          </div>
+          <div class="entry-org">{{ with $exp.org_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $exp.org }}</a>{{ else }}{{ $exp.org }}{{ end }}</div>
+        </div>
+      {{ end }}
+    </section>
+
+    <section class="section" id="publications">
+      <h2>Publications</h2>
+      {{ $pubs := where site.RegularPages "Section" "publication" }}
+      {{ $pubs = sort $pubs "Date" "desc" }}
+      {{ range $pubs }}
+        <div class="pub">
+          <div class="pub-meta">
+            {{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $a "admin" }}<strong>Iris Ma</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+            &nbsp;·&nbsp;{{ .Date.Format "Jan 2006" }}
+            &nbsp;·&nbsp;<span class="venue">{{ .Params.publication_short | default .Params.publication }}</span>
+          </div>
+          <div class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+          {{ with .Params.summary }}<div class="pub-summary">{{ . }}</div>{{ end }}
+          <div class="pub-links">
+            {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+            {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+            {{ with .Params.url_slides }}<a href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
+            {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+            <a href="{{ .Permalink }}">Cite</a>
+          </div>
+        </div>
+      {{ end }}
+    </section>
+
+    <section class="section" id="honors">
+      <h2>Honors &amp; Awards</h2>
+      <div class="section-cols">
+        {{ range site.Data.honors }}
+          <div>
+            <div class="entry-title" style="margin-bottom:6px;">{{ .org }}</div>
+            <ul>
+              {{ range .items }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="section" id="mentoring">
+      <h2>Mentoring</h2>
+      {{ $people := where site.RegularPages "Section" "people" }}
+      {{ $people = sort $people "Date" "desc" }}
+      {{ range $p := $people }}
+        {{ $link := "" }}
+        {{ with $p.Params.links }}{{ with (index . 0).url }}{{ $link = . }}{{ end }}{{ end }}
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-title">{{ if $link }}<a href="{{ $link }}" target="_blank" rel="noopener">{{ $p.Title }}</a>{{ else }}{{ $p.Title }}{{ end }}</span>
+          </div>
+          <div class="entry-sub">{{ $p.Params.summary }}</div>
+        </div>
+      {{ end }}
+    </section>
+
+  </div>
+</div>
+{{ end }}

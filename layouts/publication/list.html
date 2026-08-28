@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="page">
+  {{ partial "sidebar.html" . }}
+  <div class="content">
+    <section class="section">
+      <h2>Publications</h2>
+      {{ $pubs := sort .Pages "Date" "desc" }}
+      {{ range $pubs }}
+        <div class="pub">
+          <div class="pub-meta">
+            {{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $a "admin" }}<strong>Iris Ma</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+            &nbsp;·&nbsp;{{ .Date.Format "Jan 2006" }}
+            &nbsp;·&nbsp;<span class="venue">{{ .Params.publication_short | default .Params.publication }}</span>
+          </div>
+          <div class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+          {{ with .Params.summary }}<div class="pub-summary">{{ . }}</div>{{ end }}
+          <div class="pub-links">
+            {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+            {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+            {{ with .Params.url_slides }}<a href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
+            {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+            <a href="{{ .Permalink }}">Cite</a>
+          </div>
+        </div>
+      {{ end }}
+    </section>
+  </div>
+</div>
+{{ end }}

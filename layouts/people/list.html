@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="page">
+  {{ partial "sidebar.html" . }}
+  <div class="content">
+    <section class="section">
+      <h2>Mentoring</h2>
+      {{ $people := sort .Pages "Date" "desc" }}
+      {{ range $p := $people }}
+        {{ $link := "" }}
+        {{ with $p.Params.links }}{{ with (index . 0).url }}{{ $link = . }}{{ end }}{{ end }}
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-title">{{ if $link }}<a href="{{ $link }}" target="_blank" rel="noopener">{{ $p.Title }}</a>{{ else }}{{ $p.Title }}{{ end }}</span>
+          </div>
+          <div class="entry-sub">{{ $p.Params.summary }}</div>
+        </div>
+      {{ end }}
+    </section>
+  </div>
+</div>
+{{ end }}

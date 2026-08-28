@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="page">
+  {{ partial "sidebar.html" . }}
+  <div class="content">
+    <section class="section">
+      <h2 style="border:none; padding-bottom:0; text-transform:none; letter-spacing:normal; font-size:1.4rem;">{{ .Title }}</h2>
+      <p class="entry-sub">{{ .Params.summary }}</p>
+      {{ with .Params.links }}{{ with (index . 0).url }}
+        <p><a href="{{ . }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> Connect</a></p>
+      {{ end }}{{ end }}
+      {{ .Content }}
+      <p style="margin-top:24px;"><a href="/people/">&larr; All mentees</a></p>
+    </section>
+  </div>
+</div>
+{{ end }}
