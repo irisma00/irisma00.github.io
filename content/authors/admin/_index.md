@@ -86,7 +86,7 @@ highlight_name: true
 ---
 
 
-I am a PhD candidate in Software Engineering at [UC Irvine](https://uci.edu/), working with [Cristina Videira Lopes](https://ics.uci.edu/~lopes/) on AI for reliable software engineering. My work spans LLM training-data memorization and hallucination detection, retrieval-augmented generation (RAG), verified program synthesis with Dafny, and query-adaptive fusion methods for production search ranking.
+I am a PhD candidate in Software Engineering at [UC Irvine](https://uci.edu/), working with [Cristina Videira Lopes](https://ics.uci.edu/~lopes/) on AI for reliable software engineering. My work spans LLM memorization and hallucination detection, retrieval-augmented generation (RAG), verified program synthesis with Dafny, and query-adaptive fusion methods for production search ranking.
 
 I received a B.S. in Agronomy and Computer Science at [Iowa State University](https://www.iastate.edu/). I worked as an undergraduate research assistant at [Laboratory for Software Design](https://design.cs.iastate.edu/) with [Hridesh Rajan](https://hridesh.github.io/) and [Robert Dyer](https://cse.unl.edu/~rdyer/) on an ultra-large data mining project.
 {style="text-align: justify;"}
