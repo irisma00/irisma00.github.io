@@ -31,40 +31,5 @@
   <footer class="site-footer">
     <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · © {{ now.Year }} Iris Ma
   </footer>
-
-  <!-- TEMPORARY palette preview switcher — remove once a theme is chosen -->
-  <div id="theme-preview-switcher">
-    <div class="label">Preview color theme</div>
-    <button data-variant="" data-color="#0f6e66">Teal (current)</button>
-    <button data-variant="slate" data-color="#4338ca">Slate &amp; Indigo</button>
-    <button data-variant="terracotta" data-color="#c2410c">Terracotta</button>
-    <button data-variant="navy" data-color="#1e3a5f">Navy &amp; Burgundy</button>
-    <button data-variant="mono" data-color="#111111">Monochrome</button>
-    <button data-variant="forest" data-color="#166534">Forest</button>
-  </div>
-  <script>
-    (function () {
-      var root = document.documentElement;
-      var fromUrl = new URLSearchParams(location.search).get('theme');
-      var saved = fromUrl !== null ? fromUrl : (localStorage.getItem('themeVariant') || '');
-      if (fromUrl !== null) localStorage.setItem('themeVariant', fromUrl);
-      if (saved) root.setAttribute('data-theme-variant', saved);
-      document.querySelectorAll('#theme-preview-switcher button').forEach(function (btn) {
-        var dot = document.createElement('span');
-        dot.className = 'dot';
-        dot.style.background = btn.getAttribute('data-color');
-        btn.prepend(dot);
-        if (btn.getAttribute('data-variant') === saved) btn.classList.add('active');
-        btn.addEventListener('click', function () {
-          var v = btn.getAttribute('data-variant');
-          if (v) { root.setAttribute('data-theme-variant', v); }
-          else { root.removeAttribute('data-theme-variant'); }
-          localStorage.setItem('themeVariant', v);
-          document.querySelectorAll('#theme-preview-switcher button').forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
