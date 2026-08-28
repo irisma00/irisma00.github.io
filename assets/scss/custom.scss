@@ -9,20 +9,20 @@
  **************************************************/
 
 .home-section {
-  padding: 56px 0;
+  padding: 32px 0;
 }
 
 .home-section:first-of-type {
-  padding-top: 40px;
+  padding-top: 24px;
 }
 
 @media screen and (max-width: 768px) {
   .home-section {
-    padding: 32px 0;
+    padding: 20px 0;
   }
 
   .home-section:first-of-type {
-    padding-top: 24px;
+    padding-top: 16px;
   }
 }
 
