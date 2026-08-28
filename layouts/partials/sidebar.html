@@ -18,6 +18,8 @@
         <a href="{{ .link }}" title="Twitter / X" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
       {{ else if eq .icon "graduation-cap" }}
         <a href="{{ .link }}" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+      {{ else if eq .icon "orcid" }}
+        <a href="{{ .link }}" title="ORCID" target="_blank" rel="noopener"><i class="fab fa-orcid"></i></a>
       {{ else if eq .icon "github" }}
         <a href="{{ .link }}" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
       {{ else if eq .icon "linkedin" }}
