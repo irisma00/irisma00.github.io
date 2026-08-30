@@ -13,7 +13,7 @@
   <div class="social">
     {{ range $admin.Params.social }}
       {{ if eq .icon "envelope" }}
-        <a href="{{ .link }}" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="{{ .link }}" title="{{ strings.TrimPrefix "mailto:" .link }}"><i class="fas fa-envelope"></i></a>
       {{ else if eq .icon "twitter" }}
         <a href="{{ .link }}" title="Twitter / X" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
       {{ else if eq .icon "graduation-cap" }}
