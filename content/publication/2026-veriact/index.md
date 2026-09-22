@@ -22,7 +22,7 @@ publication_types: ['manuscript']
 
 # Publication name and optional abbreviated publication name.
 publication: Under review. Preprint on arXiv.
-publication_short: Under review
+publication_short: Under Review
 
 abstract: Formal specifications are essential for software reliability, yet automatically creating high-quality ones remains difficult. We compare classical and prompt-based methods for generating Java Modeling Language specifications and find that, while these approaches achieve high verifier-acceptance rates, verifier acceptance does not reliably indicate correctness. We introduce Spec-Harness, an evaluation framework using symbolic verification to assess specification quality, and show that many verifier-approved specifications are actually flawed, either over- or under-constraining system behavior. To address this, we develop VeriAct, an agent-driven system that iteratively synthesizes and refines specifications through a closed loop of LLM-driven planning, code execution, verification, and feedback. Testing on benchmark datasets demonstrates VeriAct produces specifications that are both verifiable and genuinely correct.
 

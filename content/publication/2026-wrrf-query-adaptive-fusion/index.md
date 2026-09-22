@@ -25,7 +25,7 @@ publication_types: ['manuscript']
 
 # Publication name and optional abbreviated publication name.
 publication: Under review.
-publication_short: Under review
+publication_short: Under Review
 
 abstract: We build ten query-adaptive weighted reciprocal rank fusion (WRRF) methods for production search, showing they outperform standard RRF. We find that optimal fusion weights form intervals rather than single points, helping explain why RRF remains near-optimal for 10--38% of queries. We introduce an oracle/headroom-recovery framework with latency-aware tiering to make these gains practical in production, and evaluate across four sparse and dense retriever configurations (BM25/RM3, MiniLM, Qwen3).
 

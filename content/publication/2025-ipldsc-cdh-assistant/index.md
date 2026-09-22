@@ -25,7 +25,7 @@ publication_types: ['paper']
 
 # Publication name and optional abbreviated publication name.
 publication: In Pediatric and Lifespan Data Science, First International Conference (IPLDSC 2024), Anaheim, California. Revised Selected Papers, Springer CCIS vol. 2386.
-publication_short: In IPLDSC 2025
+publication_short: IPLDSC 2025
 
 abstract: We develop and evaluate a medical conversational assistant that combines retrieval-augmented generation (RAG) with GPT-4 to answer questions about Congenital Diaphragmatic Hernia (CDH). With an initial knowledge base of 230 papers, the assistant correctly answered 19 of 100 expected questions internally and 67 of 258 questions in external evaluation by healthcare professionals, while establishing baseline behavior for declining out-of-scope questions. After expanding the knowledge base with 770 additional papers, accuracy improved substantially, to 91 of 100 questions internally and 224 of 258 in external re-evaluation after deployment.
 

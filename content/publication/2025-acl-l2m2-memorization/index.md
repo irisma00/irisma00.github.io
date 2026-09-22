@@ -24,7 +24,7 @@ publication_types: ['workshop']
 
 # Publication name and optional abbreviated publication name.
 publication: In Proceedings of the 1st Workshop on Large Language Model Memorization (L2M2 2025), Association for Computational Linguistics, Vienna, Austria.
-publication_short: In ACL L2M2 2025, Vienna, Austria
+publication_short: ACL L2M2 2025, Vienna, Austria
 
 abstract: We investigate how completely books can be retrieved from language models. Using Llama 3 70B and a prefix-prompting extraction method, we reconstruct "Alice's Adventures in Wonderland" with high fidelity from merely the opening 500 tokens, and observe strong extraction on other books as well, though success rates vary considerably across titles and correlate with book popularity, suggesting training-data duplication plays a role. We also document how instruction-tuning in Llama 3.1 reversed earlier safeguards designed to prevent memorization, tracing these changes to a small weight subset in lower transformer layers. This work demonstrates weaknesses in current mitigation approaches and offers tools for examining how fine-tuning influences verbatim recall in aligned language models.
 

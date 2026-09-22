@@ -1,7 +1,7 @@
 # Work experience, most recent first.
 # date_end: '' means current / ongoing.
 - title: Research Assistant
-  org: Mondego Lab, University of California, Irvine
+  org: Mondego Lab, UC Irvine
   org_url: 'https://uci.edu/'
   location: Irvine, CA
   date_start: '2022-09'
@@ -25,8 +25,8 @@
   date_start: '2023-06'
   date_end: '2023-09'
 - title: Research Assistant
-  org: Laboratory for Software Design, Iowa State University
-  org_url: 'https://design.cs.iastate.edu/'
+  org: Laboratory for Software Design, ISU
+  org_url: 'https://lab-design.github.io/'
   location: Ames, IA
   date_start: '2021-05'
   date_end: '2022-05'
