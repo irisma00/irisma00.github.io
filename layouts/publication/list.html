@@ -6,19 +6,14 @@
       <h2>Publications</h2>
       {{ $pubs := sort .Pages "Date" "desc" }}
       {{ range $pubs }}
+        {{ $link := "" }}
+        {{ if .Params.doi }}{{ $link = printf "https://doi.org/%s" .Params.doi }}{{ else if .Params.url_pdf }}{{ $link = .Params.url_pdf }}{{ end }}
         <div class="pub">
-          <div class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+          <div class="pub-title">{{ if $link }}<a href="{{ $link }}" target="_blank" rel="noopener">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}</div>
           <div class="pub-meta">
             {{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $a "admin" }}<strong>Iris Ma</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
             &nbsp;·&nbsp;{{ .Date.Format "Jan 2006" }}
             &nbsp;·&nbsp;<span class="venue">{{ .Params.publication_short | default .Params.publication }}</span>
-          </div>
-          <div class="pub-links">
-            {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
-            {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
-            {{ with .Params.url_slides }}<a href="{{ . }}" target="_blank" rel="noopener">Slides</a>{{ end }}
-            {{ with .Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
-            <a href="{{ .Permalink }}">Cite</a>
           </div>
         </div>
       {{ end }}

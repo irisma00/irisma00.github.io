@@ -53,8 +53,10 @@
       {{ $pubs := where site.RegularPages "Section" "publication" }}
       {{ $pubs = sort $pubs "Date" "desc" }}
       {{ range $pubs }}
+        {{ $link := "" }}
+        {{ if .Params.doi }}{{ $link = printf "https://doi.org/%s" .Params.doi }}{{ else if .Params.url_pdf }}{{ $link = .Params.url_pdf }}{{ end }}
         <div class="pub">
-          <div class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+          <div class="pub-title">{{ if $link }}<a href="{{ $link }}" target="_blank" rel="noopener">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}</div>
           <div class="pub-meta">
             {{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $a "admin" }}<strong>Iris Ma</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
             &nbsp;·&nbsp;{{ .Date.Format "Jan 2006" }}
