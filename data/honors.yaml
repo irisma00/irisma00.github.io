@@ -1,15 +1,33 @@
 # Honors, awards, and grants, grouped by institution.
 - org: University of California, Irvine
   items:
-    - "Beall Applied Innovation's Graduate Innovation Fellowship — $5,000 (2024)"
-    - "I-Corps Program — $5,000 (2024)"
-    - "Beall Applied Innovation's Proof-of-Product Grant — $48,000 (2024)"
-    - "ESEC/FSE Conference Travel Fund — $2,450 (2023)"
-    - "New Ph.D. Student Fellowship — $2,500 (2022)"
+    - year: 2024
+      title: "Beall Applied Innovation's Graduate Innovation Fellowship"
+      amount: "$5,000"
+    - year: 2024
+      title: "I-Corps Program"
+      amount: "$5,000"
+    - year: 2024
+      title: "Beall Applied Innovation's Proof-of-Product Grant"
+      amount: "$48,000"
+    - year: 2023
+      title: "ESEC/FSE Conference Travel Fund"
+      amount: "$2,450"
+    - year: 2022
+      title: "New Ph.D. Student Fellowship"
+      amount: "$2,500"
 - org: Iowa State University
   items:
-    - "Robert and Cecile Mitchell Scholarship — $2,650 (2021)"
-    - "International Incentive Scholarship — $1,500 (2021)"
-    - "Global Scholars Award for Undergraduate Retention — $500 (2021)"
-    - "International Incentive Scholarship — $1,500 (2020)"
-    - "Dean's List Honors (10 times)"
+    - year: 2021
+      title: "Robert and Cecile Mitchell Scholarship"
+      amount: "$2,650"
+    - year: 2021
+      title: "International Incentive Scholarship"
+      amount: "$1,500"
+    - year: 2021
+      title: "Global Scholars Award for Undergraduate Retention"
+      amount: "$500"
+    - year: 2020
+      title: "International Incentive Scholarship"
+      amount: "$1,500"
+    - title: "Dean's List Honors (10 times)"

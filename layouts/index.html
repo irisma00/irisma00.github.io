@@ -74,12 +74,16 @@
 
     <section class="section" id="honors">
       <h2>Honors &amp; Awards</h2>
-      <div class="section-cols">
+      <div class="section-cols single-col">
         {{ range site.Data.honors }}
           <div>
             <div class="entry-title" style="margin-bottom:6px;">{{ .org }}</div>
             <ul>
-              {{ range .items }}<li>{{ . }}</li>{{ end }}
+              {{ range .items }}
+                <li>
+                  {{ with .year }}<span class="honor-year">[{{ . }}]</span> {{ end }}{{ .title }}{{ with .amount }} <span class="honor-amount">({{ . }})</span>{{ end }}
+                </li>
+              {{ end }}
             </ul>
           </div>
         {{ end }}
