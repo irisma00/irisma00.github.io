@@ -1,6 +1,6 @@
 ---
 title: Shengdong Jiang
-summary: Undergraduate Student, University of Waterloo (Summer 2026 -- present)
+summary: Undergraduate Student, University of Waterloo (Summer 2026)
 tags:
   - Mentoring
 
