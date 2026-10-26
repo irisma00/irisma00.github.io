@@ -37,7 +37,7 @@ tags: [Information Retrieval]
 # Display this page in the Featured widget?
 featured: true
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/abs/2610.24341'
 url_code: ''
 url_dataset: ''
 url_poster: ''
