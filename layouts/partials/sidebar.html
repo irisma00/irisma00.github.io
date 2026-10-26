@@ -1,5 +1,9 @@
 {{ $admin := site.GetPage "/authors/admin" }}
 {{ $avatar := ($admin.Resources.GetMatch "avatar*") }}
+{{ $email := "" }}
+{{ range $admin.Params.social }}
+  {{ if eq .icon "envelope" }}{{ $email = strings.TrimPrefix "mailto:" .link }}{{ end }}
+{{ end }}
 <aside class="sidebar">
   {{ with $avatar }}
     {{ $img := .Fill "240x240 Center" }}
@@ -10,11 +14,12 @@
   {{ range $admin.Params.organizations }}
     <div class="org"><a href="{{ .url }}">{{ .name }}</a></div>
   {{ end }}
+  {{ with $email }}
+    <div class="email"><a href="mailto:{{ . }}">{{ . }}</a></div>
+  {{ end }}
   <div class="social">
     {{ range $admin.Params.social }}
-      {{ if eq .icon "envelope" }}
-        <a href="{{ .link }}" title="{{ strings.TrimPrefix "mailto:" .link }}"><i class="fas fa-envelope"></i></a>
-      {{ else if eq .icon "twitter" }}
+      {{ if eq .icon "twitter" }}
         <a href="{{ .link }}" title="Twitter / X" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
       {{ else if eq .icon "graduation-cap" }}
         <a href="{{ .link }}" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
